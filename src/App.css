@@ -1,38 +1,91 @@
 .App {
+  margin: 0 auto;
+  position: absolute;
+}
+.navigation {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: aliceblue;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding: 1rem;
+  background: #d6ecff;
+  text-decoration: none;
+  padding: 1rem;
+  width: 10rem;
+  margin: 0 auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-container {
+  margin: 5rem;
+}
+.list {
+  margin: 0 -5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Clear floats after the columns */
+.list:after {
+  content: '';
+  display: table;
+  clear: both;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.book {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: inherit;
 }
-
-.App-link {
-  color: #61dafb;
+.book-container {
+  float: left;
+  width: 25%;
+  min-width: 17rem;
+  max-width: 25rem;
+  height: 10rem;
+  padding: 0 10px;
+  margin: 0rem 0rem 5rem 0rem;
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.book-title {
+  text-align: left;
+  font-size: large;
+  color: rgb(0, 0, 0);
+  display: -webkit-box;
+  word-break: break-word;
+  overflow: hidden;
+  font-size: 1.25rem;
+  margin: 0.25rem 0px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  font-family: Helvetica, sans-serif;
+}
+.book-subtitle {
+  flex: 1 0;
+  color: rgb(114, 114, 114);
+  overflow: hidden;
+  text-align: initial;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+.book-publisher {
+  position: absolute;
+  bottom: 0px;
+  font-size: small;
+  text-align: initial;
+  color: cornflowerblue;
+}
+@media screen and (max-width: 600px) {
+  .book-container {
+    display: block;
+    margin-bottom: 20px;
+    margin: 0rem 0rem 4rem 0rem;
   }
 }
