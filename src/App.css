@@ -27,6 +27,127 @@
   text-align: center;
 }
 
+/* Landing Page */
+
+.landing-page {
+  position: absolute;
+  margin: 5rem;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.app-name {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 700;
+  color: #335eea;
+}
+.action-button {
+  flex: 1 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9898ca;
+  font-weight: 500;
+}
+.action-button span {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.primary-button {
+  background-color: #335eea;
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  margin-right: 1rem;
+}
+.default-button {
+  background-color: rgba(51, 94, 234, 0.1);
+  color: #335eea;
+  padding: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+}
+.welcome-page {
+  width: 100%;
+  display: flex;
+  padding-top: 5rem;
+}
+.welcome-page div {
+  /* float: left; */
+  /* width: 50%; */
+  height: auto;
+  position: relative;
+}
+.child {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  position: unset;
+  display: block;
+  margin: 10px;
+  height: 25rem;
+  overflow: hidden;
+}
+.child h1 {
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.child p {
+  max-width: 70%;
+  color: #9898ca;
+}
+.child img {
+  max-width: 100%;
+  height: auto;
+}
+.child .button-container {
+  display: flex;
+  margin-top: 3rem;
+  width: fit-content;
+}
+.child-svg {
+  color: #869ab8;
+}
+
+.title-text {
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+.icon-container svg {
+  height: 3rem;
+  width: 3rem;
+}
+@media screen and (max-width: 750px) {
+  .landing-page {
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+  .welcome-page {
+    display: block;
+  }
+  .welcome-page div {
+    width: 100%;
+  }
+  .child-svg {
+    width: 9rem !important;
+  }
+}
+
 /* Google api list page */
 
 .list-container {
