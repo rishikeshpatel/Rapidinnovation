@@ -3,6 +3,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 /* Navigation header */
 .navigation {
@@ -32,6 +34,9 @@
 .landing-page {
   position: absolute;
   margin: 5rem;
+  display: grid;
+  max-width: 1200px;
+  padding-bottom: 10rem;
 }
 .header {
   width: 100%;
@@ -45,6 +50,7 @@
   font-size: x-large;
   font-weight: 700;
   color: #335eea;
+  margin-right: 1rem;
 }
 .action-button {
   flex: 1 0;
@@ -66,6 +72,7 @@
   border-radius: 6px;
   cursor: pointer;
   display: flex;
+  min-width: 4rem;
   margin-right: 1rem;
 }
 .default-button {
@@ -100,6 +107,12 @@
 .child h1 {
   letter-spacing: -0.02em;
   line-height: 1.2;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.child h2 {
+  letter-spacing: -0.02em;
+  line-height: 1.2;
   font-size: 3rem;
   font-weight: 400;
 }
@@ -110,6 +123,7 @@
 .child img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px 10px 0px 0px;
 }
 .child .button-container {
   display: flex;
@@ -131,6 +145,55 @@
   height: 3rem;
   width: 3rem;
 }
+.input-form {
+  display: block;
+  flex-grow: 0;
+}
+.login-card {
+  word-wrap: break-word;
+  background-clip: border-box;
+  background-color: #fff;
+  border: 0 solid #f1f4f8;
+  border-radius: 0.375rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.login-card .form-input {
+  font-family: 'Roboto', sans-serif;
+  color: #869ab8;
+  font-size: 1.2rem;
+  margin: opx !important;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: white !important;
+  border: none;
+  border-bottom: 1px solid;
+  display: block;
+}
+.login-card .form-input:focus-visible {
+  outline: none;
+}
+.login-card .submit-button {
+  width: 100%;
+  background-color: #42ba96;
+  border-radius: 5px;
+  margin: opx !important;
+}
+.login-container {
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
+  padding: 0px !important;
+}
+.login-card .text-list {
+  display: grid;
+}
+.text-list span {
+  padding: 13px;
+  color: #42ba96 !important;
+}
+.welcome-page .dashboard img {
+  transform: rotateY(-35deg) rotateX(15deg);
+}
 @media screen and (max-width: 750px) {
   .landing-page {
     position: absolute;
@@ -145,6 +208,9 @@
   }
   .child-svg {
     width: 9rem !important;
+  }
+  .App {
+    display: block;
   }
 }
 
@@ -218,6 +284,7 @@
 /* User Details page */
 .user-details-container {
   margin: 5rem;
+  width: 100%;
 }
 .form-container {
   display: flex;
